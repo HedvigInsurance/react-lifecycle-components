@@ -1,5 +1,3 @@
-import { Mount } from "./src/mount"
+import { Mount } from "./src/mount";
 
-export {
-    Mount
-}
+export { Mount };

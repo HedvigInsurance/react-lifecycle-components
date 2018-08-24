@@ -11,7 +11,7 @@
     "test": "jest",
     "build": "tsc",
     "precommit": "lint-staged",
-    "format": "prettier --write \"src/**/*.tsx\""
+    "format": "prettier --write **/*.tsx"
   },
   "lint-staged": {
     "*.js": [
