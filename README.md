@@ -15,4 +15,4 @@ Takes one prop `on` which is called when the component mounts.
 ```
 
 #### Usecase
-When you want to perform a side-effect on mount, like sending a tracking event, starting an animation, or something like that.
+When you want to perform a side-effect on mount, like sending a tracking event 🚀, starting an animation ✨, or something like that.
