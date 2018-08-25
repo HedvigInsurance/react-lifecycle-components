@@ -8,7 +8,7 @@ React lifecycle as components
 ## Components
 
 ### Mount
-Takes one prop on which is called when the component mounts.
+Takes one prop `on` which is called when the component mounts.
 
 ```javascript
     <Mount on={() => console.log("I was mounted!")} />
