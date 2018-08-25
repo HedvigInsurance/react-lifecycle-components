@@ -1,0 +1,40 @@
+{
+  "name": "react-lifecycle-components",
+  "version": "1.0.0",
+  "description": "React lifecycle as components",
+  "main": "dist/index.js",
+  "repository": "git@github.com:HedvigInsurance/react-lifecycle-components.git",
+  "author": "Sam Pettersson <sam@hedvig.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "precommit": "lint-staged",
+    "format": "prettier --write **/*.tsx"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write **/*.tsx",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "@types/enzyme-adapter-react-16": "^1.0.3",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.2",
+    "prettier": "^1.14.2",
+    "@types/enzyme": "^3.1.13",
+    "@types/jest": "^23.3.1",
+    "@types/react": "^16.4.11",
+    "@types/react-test-renderer": "^16.0.2",
+    "enzyme": "^3.4.4",
+    "enzyme-adapter-react-16": "^1.2.0",
+    "jest": "^23.5.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-test-renderer": "^16.4.2",
+    "ts-jest": "^23.1.4",
+    "typescript": "^3.0.1"
+  }
+}
