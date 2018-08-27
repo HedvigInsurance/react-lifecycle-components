@@ -1,6 +1,8 @@
 # React lifecycle as components
 An alternative to writing classes, here are some declarative components you can use to keep your code clean 👌🏻
 
+Supports: React DOM and React Native.
+
 ## Install
 ```
     yarn install react-lifecycle-components
