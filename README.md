@@ -1,4 +1,5 @@
-React lifecycle as components
+# React lifecycle as components
+An alternative to writing classes, here are some declarative components you can use to keep your code clean 👌🏻
 
 ## Install
 ```
