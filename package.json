@@ -11,6 +11,7 @@
     "test": "jest",
     "build": "tsc",
     "precommit": "lint-staged",
+    "prepublishOnly": "tsc",
     "format": "prettier --write **/*.tsx"
   },
   "lint-staged": {
