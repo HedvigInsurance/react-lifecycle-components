@@ -36,9 +36,5 @@
     "react-test-renderer": "^16.4.2",
     "ts-jest": "^23.1.4",
     "typescript": "^3.0.1"
-  },
-  "dependencies": {
-    "@types/ramda": "^0.25.36",
-    "ramda": "^0.25.0"
   }
 }
