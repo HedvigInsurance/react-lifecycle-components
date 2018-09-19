@@ -1,13 +1,13 @@
 import * as React from "react";
 
 interface UnmountProps {
-  on: Function;
+  on: () => void;
 }
 
 export class Unmount extends React.Component<UnmountProps, {}> {
   componentWillUnmount() {
     const { on } = this.props;
-    on(this.props);
+    on();
   }
 
   render() {

@@ -1,13 +1,13 @@
 import * as React from "react";
 
 interface MountProps {
-  on: Function;
+  on: () => void;
 }
 
 export class Mount extends React.Component<MountProps, {}> {
   componentDidMount() {
     const { on } = this.props;
-    on(this.props);
+    on();
   }
 
   render() {
