@@ -12,6 +12,6 @@ export class Mount extends React.Component<MountProps, {}> {
 
   render() {
     const { children } = this.props;
-    return children;
+    return children || null;
   }
 }

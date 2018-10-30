@@ -1,6 +1,6 @@
 {
   "name": "react-lifecycle-components",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "React lifecycle as components",
   "main": "dist/index.js",
   "repository": "git@github.com:HedvigInsurance/react-lifecycle-components.git",

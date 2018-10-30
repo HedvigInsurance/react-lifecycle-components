@@ -8,18 +8,20 @@ interface UpdateProps<T> {
 }
 
 function shallowEquals<T>(prevWatched: T, currentWatched: T) {
-    if (typeof prevWatched !== "object") {
-        return prevWatched === currentWatched
-    }
+  if (typeof prevWatched !== "object") {
+    return prevWatched === currentWatched;
+  }
 
-    const prevValuesKeys = Object.keys(prevWatched)
-    const currentValuesKeys = Object.keys(currentWatched)
+  const prevValuesKeys = Object.keys(prevWatched);
+  const currentValuesKeys = Object.keys(currentWatched);
 
-    if (prevValuesKeys.length !== currentValuesKeys.length) {
-        return false
-    }
+  if (prevValuesKeys.length !== currentValuesKeys.length) {
+    return false;
+  }
 
-    return prevValuesKeys.every((key) => prevWatched[key as keyof T] === currentWatched[key as keyof T])
+  return prevValuesKeys.every(
+    key => prevWatched[key as keyof T] === currentWatched[key as keyof T]
+  );
 }
 
 export class Update<T> extends React.Component<UpdateProps<T>, {}> {
@@ -27,12 +29,12 @@ export class Update<T> extends React.Component<UpdateProps<T>, {}> {
     const { was } = this.props;
 
     if (!shallowEquals(prevProps.watched, this.props.watched)) {
-        was(prevProps.watched, this.props.watched);
+      was(prevProps.watched, this.props.watched);
     }
   }
 
   render() {
     const { children } = this.props;
-    return children;
+    return children || null;
   }
 }

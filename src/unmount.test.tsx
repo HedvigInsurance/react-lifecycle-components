@@ -17,3 +17,15 @@ test("should call on function when unmounted", () => {
 
   expect(mockOn).toHaveBeenCalled();
 });
+
+test("shouldn't crash without children", () => {
+  const mockOn = jest.fn<Function>(jest.fn());
+
+  const wrapper = mount(<Unmount on={mockOn} />);
+
+  expect(mockOn).not.toHaveBeenCalled();
+
+  wrapper.unmount();
+
+  expect(mockOn).toHaveBeenCalled();
+});
