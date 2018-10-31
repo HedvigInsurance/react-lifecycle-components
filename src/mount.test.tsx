@@ -13,3 +13,11 @@ test("should call on function when mounted", () => {
 
   expect(mockOn).toHaveBeenCalled();
 });
+
+test("shouldn't crash without children", () => {
+  const mockOn = jest.fn<Function>(jest.fn());
+
+  mount(<Mount on={mockOn} />);
+
+  expect(mockOn).toHaveBeenCalled();
+});

@@ -12,6 +12,6 @@ export class Unmount extends React.Component<UnmountProps, {}> {
 
   render() {
     const { children } = this.props;
-    return children;
+    return children || null;
   }
 }
